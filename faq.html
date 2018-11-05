@@ -37,21 +37,30 @@
 
             <ul class="navbar-nav ml-auto">
                   <!-- Link
-                  <li class="nav-item"> <a href="index.html" class="nav-link active">Home</a></li>   -->
-                  <!-- Link-->
+                  <li class="nav-item"> <a href="index.html" class="nav-link active">Home</a></li>   
+                   Link
                   <li class="nav-item"> <a href="index.html" class="nav-link">Fonctionnement</a></li>
-                  <!-- Link-->
-                  <li class="nav-item"> <a href="index.html" class="nav-link">FAQ</a></li>
+                  
+                  <li class="nav-item"> <a href="index.html" class="nav-link">FAQ</a></li>  -->
                   <!-- Link
                   <li class="nav-item"> <a href="contact.html" class="nav-link">Contact</a></li>  
-                  
-              <li class="nav-item dropdown"><a id="pages" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Dropdown</a>
-                <div class="dropdown-menu"><a href="faq.html" class="dropdown-item">FAQ</a><a href="contact.html" class="dropdown-item">Contact</a><a href="text.html" class="dropdown-item">Text Page</a></div>
-              </li>  -->
+                  -->
+                   <a href="#" data-toggle="modal" data-target="#login" class="btn btn-primary navbar-btn ml-0 ml-lg-3">Créer un compte</a>
+
+                 <a href="#" data-toggle="modal" data-target="#conseil" class="btn btn-primary navbar-btn ml-0 ml-lg-3">Rejoindre conseil syndical</a> 
+
+                    <li class="nav-item dropdown"><a id="pages" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">En savoir plus</a>
+                <div class="dropdown-menu"><a href="faq.html" class="dropdown-item">Fonctionnement</a><a href="contact.html" class="dropdown-item">FAQ</a></div>
+              </li>  
+
+                    
+
+             <a href="#" data-toggle="modal" data-target="#login1"><i class="fas fa-2x fa-user-circle"></i> </a> 
+             
             </ul>
 
-            <a href="#" data-toggle="modal" data-target="#login" class="btn btn-primary navbar-btn ml-0 ml-lg-3">Créer un compte</a>
-            <a href="#" data-toggle="modal" data-target="#conseil" class="btn btn-primary navbar-btn ml-0 ml-lg-3">Rejoindre son conseil syndical</a> 
+
+           
             
           </div>
         </div>
@@ -67,16 +76,84 @@
           <div class="modal-body p-4 p-lg-5">
             <form action="#" class="login-form text-left">
               <div class="form-group mb-4">
-                <label>Email address</label>
-                <input type="email" name="email" placeholder="name@company.com" class="form-control">
+                <label>Votre adresse email</label>
+                <input type="email" name="email" placeholder="nom.prenom@gmail.com" class="form-control">
               </div>
               <div class="form-group mb-4">
-                <label>Password</label>
-                <input type="password" name="password" placeholder="Min 8 characters" class="form-control">
+                <label>Votre mot de passe</label>
+                <input type="password" name="password" placeholder="Min 8 caractères" class="form-control">
+              </div>
+              <div class="form-group mb-4">
+                <label>Répétez le mot de passe</label>
+                <input type="password" name="password" placeholder="Min 8 caractères" class="form-control">
               </div>
               <div class="form-group">
-                <input type="submit" value="Login" class="btn btn-primary">
+                <input type="submit" value="je crée mon compte" class="btn btn-primary">
               </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Modal-->
+    <div id="conseil" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade bd-example-modal-lg">
+      <div role="document" class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body p-4 p-lg-5">
+            <form action="#" class="login-form text-left">
+              <div class="form-group mb-4">
+                <label>Code d'accès de votre conseil syndical</label>
+                <input type="email" name="email" placeholder="Code à demander au président de votre conseil syndical" class="form-control">
+              </div>
+              <div class="form-group mb-4">
+                <label>Votre adresse email</label>
+               <input type="email" name="email" placeholder="Votre adresse email" class="form-control">
+              </div>
+              <div class="form-group mb-4">
+                <label>Créez un mot de passe</label>
+                <input type="password" name="password" placeholder="Min 8 caractères" class="form-control">
+              </div>
+              <div class="form-group mb-4">
+                <label>Répétez le mot de passe</label>
+                <input type="password" name="password" placeholder="Min 8 caractères" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Rejoindre mon conseil syndical" class="btn btn-primary">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Modal-->
+    <div id="login1" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade bd-example-modal-lg">
+      <div role="document" class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body p-4 p-lg-5">
+            <form action="#" class="login-form text-left">
+              
+              <div class="form-group mb-4">
+                <label>Votre adresse email/identifiant</label>
+               <input type="email" name="email" placeholder="Votre adresse email" class="form-control">
+              </div>
+              <div class="form-group mb-4">
+                <label>Votre mot de passe</label>
+                <input type="password" name="password" placeholder="Min 8 caractères" class="form-control">
+              </div>
+              
+              <div class="form-group">
+                <input type="submit" value="Connexion" class="btn btn-primary">
+
+              </div>
+              <input type="submit" value="Mot de passe oublié" class="btn btn-link">
             </form>
           </div>
         </div>
