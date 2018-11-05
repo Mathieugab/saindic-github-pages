@@ -101,6 +101,42 @@
     </div>
 
     <!-- Login Modal-->
+    <div id="alerte" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade bd-example-modal-lg">
+      <div role="document" class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body p-4 p-lg-5">
+            <form action="#" class="login-form text-left">
+              <div class="form-group mb-4">
+                <label>Laissez nous votre email, numéro de téléphone et la date de votre prochaine assemblée générale. Nous vous enverrons une alerte pour que vous puissiez utiliser Saindic.com pour vos prochains de travaux de copro!</label>
+                
+              </div>
+              <div class="form-group mb-4">
+                <label>Votre email</label>
+                <input type="mail" name="nom.prenom@mail.com" placeholder="Entrez votre email" class="form-control">
+              </div>
+              <div class="form-group mb-4">
+                <label>Votre numéro de téléphone</label>
+                <input type="password" name="password" placeholder="0612345678" class="form-control">
+              </div>
+              <div class="form-group mb-4">
+                <label>Date de la prochaine assemblée générale</label>
+                <input type="text" name="password" placeholder="24/10/2019" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="submit" value="M'alerter avant la prochaine assemblée générale" class="btn btn-primary">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Login Modal-->
     <div id="conseil" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade bd-example-modal-lg">
       <div role="document" class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
@@ -447,7 +483,11 @@
             <div class="col-lg-8 mx-auto">
               <p class="lead text-muted mt-2">Laissez nous votre mail ou celui du président de votre conseil syndical et la date de votre prochaine assemblée générale. Nous rentrerons en contact avec lui pour qu'il puisse utiliser Saindic.com lors de vos prochains travaux.</p>
             </div>
-          </div><a href="#" class="btn btn-primary mt-4"> Me rappeller avant la <br>prochaine assemblée générale</a>
+          </div>
+
+<a href="#" data-toggle="modal" data-target="#alerte" class="btn btn-primary mt-4">Me rappeller avant la <br>prochaine assemblée générale</a>
+
+
         </div>
       </div>
     </section>
